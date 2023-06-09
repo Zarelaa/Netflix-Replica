@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100;0,400;0,500;1,100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    color:#fff;
+    font-family: 'Saira', sans-serif;
+}
+
+body{
+    background-color: #000;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(img/netflix-octobre-contenus-2022.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 250px;
+    cursor: pointer;
+}
+
+nav button{
+    border: 0;
+    outline: 0;
+    background: red;
+    color: #fff;
+    padding: 7px 25px;
+    border-radius: 15px 5px;
+    font-size: 20px;
+}
+
+.headercontent{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 100px;
+}
+.headercontent h1{
+    font-size: 60px;
+    line-height: 70px;
+    max-width: 650px;
+    font-weight: 600;
+}
+
+.headercontent h3{
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.emailsub{
+    border-radius: 4px;
+    display: flex;
+    margin-top: 30px;
+    overflow: hidden;
+    align-items: center;
+}
+
+.emailsub input{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+    padding: 15px 30px;
+    background-color: rgb(60, 60, 60, 0.7);
+    border-radius: 5px;
+}
+.emailsub .btn{
+    background: red;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 13px 30px;
+}
+
+.features{
+    padding: 50px 12%;
+    font-size: 22px;
+    background-color: black;
+}
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0px;
+}
+.text1{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.slika1{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.slika1 img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.features h2{
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+small{
+    font-size: 13px;
+}
+
+.footer{
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+    text-align: center;
+    background-color: black;
+    margin-bottom: 30px;
+}
+
+.endtofooter{
+    background-color: black;
+}
+.endtofooter .emailsub{
+    padding: 80px 150px;
+}
+
+.endtofooter p{
+    font-size: 22px;
+    text-align: center;
+}
+
+
+/* Login Page */
+
+.headercontent_{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 100px;
+    background-color: rgba(0,0,0,0.7);
+    padding: 50px;
+    border-radius: 25px;
+}
+
+.headercontent_ h1{
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+
+.loginpart{
+    display: inline-block;
+    box-sizing: border-box;
+    align-items: center;
+}
+.loginpart input{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+    padding: 15px 5px;
+    background-color: rgb(60, 60, 60, 0.7);
+    border-radius: 5px;
+}
+
+.loginpart .fp{
+    margin-right: 180px;
+}
+.btnl{
+    margin-top: 30px;
+    background: red;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 13px 30px;
+}
+
+
+@media only screen and (max-width: 800px){
+    .logo{
+        width: 150px;
+    }
+    nav button{
+        padding: 3px 10px;
+    }
+    header .headercontent{
+        position: unset;
+        transform: none;
+        padding-top: 150px;
+    }
+    
+    .headercontent h1{
+        font-size: 35px;
+    }
+    .headercontent h3{
+        font-size: 25px;
+    }
+
+    .emailsub .btn{
+        font-size: 12px;
+        padding: 5px 15px;        
+    }
+    .endtofooter .emailsub .btn{
+        font-size: 12px;
+        padding: 15px 15px;
+    }
+    .text1, .slika1{
+        flex-basis: 100%;
+    }
+    .features h2{
+        font-size: 35px;
+    }
+    .features p{
+        font-size: 20px;
+    }
+    .features .row{
+        padding: 10px 0;
+    }
+    .endtofooter .emailsub{
+        padding: 20px 50px;
+    }
+    .endtofooter .emailsub .btn{
+        padding: 5px 10px;
+    }
+
+    /* login  */
+    .headercontent_{
+        position: unset;
+        transform: none;
+        padding: 25px;
+    }
+    
+    .headercontent_ input{
+        margin: 8px;
+    }
+     
+    .headercontent_ h1{
+        font-size: 25px;
+    }
+    .loginpart .fp{
+        margin-right: 0px;
+    }
+}
